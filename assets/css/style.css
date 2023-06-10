@@ -1,0 +1,301 @@
+*{
+    font-family:'roboto', 'sans-serif';
+}
+body{
+    max-width:751px;
+    
+    box-sizing: border-box;
+}
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+.header{
+   
+    height:63px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+
+
+}
+.logo{
+    height:44px;
+    width:162px;
+}
+/***************************************************/   
+
+.position{
+    background-color: #eaeaea;
+    height:50px;
+    gap:17px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.p{
+    font-size:16px;
+    font-weight: 500;
+}
+/*************************/
+.nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:287.5px;
+    background-color: #f7f7f7;
+   
+    gap:27px;
+}
+.nav h1{
+    font-size: 24px;
+    font-weight: 700;
+    margin:0 42px;
+    height:68px;
+    display: flex;
+    justify-content: center;
+     
+}
+.nav p{
+    font-size:18px;
+    font-weight: 300;
+    margin:0 34px;
+}
+.explorer-button{
+    width:218px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background:linear-gradient(0deg, #9356DC -11.44%, #FF79DA 123.93%);
+    color:#ffffff;
+    text-decoration: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    font-size:16px;
+    font-weight:500;
+   
+
+}
+.explorer-button:hover{
+  
+    opacity:0.8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.50);
+    transform:scale(1.1);
+}
+/*************************************************/
+.filters{
+    height:440px;
+   
+    display:flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top:23px;
+    gap:25px;
+}
+.filters h2{
+    font-size: 24px;
+    font-weight:700;
+}
+
+
+.filter-bar{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+}
+.filter-bar p{
+    font-size:14.18px;
+    font-weight: 500;
+    padding:6px 12px;
+    background-color:#9356dc;
+    border-radius: 40px;
+    color:#ffffff;
+
+    margin:-15px;
+
+}
+.filter-bar i{
+   color:#9356DC;
+
+    padding-left:15px;
+
+}
+.filter-bar a{
+    font-size: 16px;
+    font-weight: 500;
+}
+.filter-title{
+    width:86%;
+    height:72.38px;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    justify-content: flex-start;
+    background-color: #f6f6f6;
+    padding-right:38px;
+    padding-left: 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    &:hover{
+        opacity:0.8;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.50);
+        transform:scale(1.02);
+    }
+}
+
+/**************************************************/
+.restaurants{
+    background-color: #f6f6f6;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    padding-bottom:66px;
+    
+}
+
+.restaurants-cards{
+    margin: 0 15px;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap:15px;
+    .card{
+        
+        height:251px;
+        width:100%;
+        border-radius:25px;
+        background-color: #ffffff;
+        .nouveau{
+            position:relative;
+            
+            
+        
+        } 
+        .nouveau::before{
+            content: "Nouveau";
+            position:absolute;
+            color:#008766;
+            font-size:14px;
+            font-weight:500;
+            padding:0.2rem;
+            background-color: #99e2d0;
+            right:25px;
+            top:25px;
+            
+           
+            
+           
+        
+
+        }  
+        
+
+        
+        .card-image img{
+            height:174px; /***251-77px maquette****/
+            width:100%;
+            margin:0;
+            fill:cover;
+            padding:0;
+            border-top-left-radius:25px;
+            border-top-right-radius:25px ;
+
+        }
+        .card-description{
+            position:relative;
+           
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            height:77px;
+            margin-left:15px;
+            margin-top:5px;
+           
+            
+            .title{
+              
+                margin-top:0px;
+                margin-bottom:5px;
+            }
+            .subtitle{
+                margin-top:0px;
+               
+                
+            }
+          
+            .fa-regular{
+                position:absolute;
+                right:1rem;                 
+                font-size:22px;
+                margin-bottom:1.4rem;
+                transition-duration:5ms;
+                &:hover{
+                    
+                    transition-duration:400ms;
+                    font-weight:900;
+                    background-clip:text;
+                    -webkit-background-clip: text;
+                    color:transparent;
+                    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+
+                }             
+            
+            }                         
+            } 
+            }
+           
+            }
+        
+    
+        
+    
+
+
+
+
+
+/*****************construction de la card*************/
+
+
+/***********Footer****************/
+.footer{
+    background-color: #353535;
+    height:186px;
+    display:flex;
+    flex-direction: column;
+    padding:22px 25px;
+    gap:16px;
+    color:#ffffff;
+    
+}
+.links{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    padding:0;
+    gap:16px;
+   
+}
+.footer img{
+    width:137.58px;
+    height:27px;
+    
+}
+
+.footer-subtitle{
+    height:19px;
+    display: flex;
+    align-items: center;
+    gap:16px;
+
+    font-size: 16px;
+    font-weight: 500;
+}
+/***************************************************/
+/**************************************************/
