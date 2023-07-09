@@ -237,7 +237,9 @@ a {
     gap: 18px;
     padding-bottom: 66px;
 }
-
+.restaurant-title{
+    margin-left:20px;
+}
 .restaurants h2 {
     font-size: 24px;
     font-weight: 700;
