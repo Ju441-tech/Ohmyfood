@@ -1,6 +1,6 @@
 body {
-   
-    margin:auto;
+
+    margin: auto;
 }
 
 a {
@@ -19,10 +19,12 @@ h4,
 p {
     margin: 0;
 }
-p{
+
+p {
     font-size: 16px;
     font-weight: 500;
 }
+
 /****************header*****************/
 .header {
     height: 63px;
@@ -60,6 +62,7 @@ p{
 
     box-sizing: border-box;
 }
+
 /*************************container**********************************/
 .main-container {
 
@@ -77,15 +80,17 @@ p{
     flex-direction: column;
     gap: 40px;
 }
-.restaurant-name{
 
-    width:95%;
-    display:flex;
+.restaurant-name {
+
+    width: 95%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .restaurant-name h1 {
-    margin-top:35px;
+    margin-top: 35px;
     font-size: 28px;
     font-weight: 400;
     font-family: 'Shrikhand', cursive;
@@ -93,8 +98,8 @@ p{
 }
 
 .restaurant-name .fa-heart {
-    position:absolute;
-    top:45px;
+    position: absolute;
+    top: 45px;
     font-size: 22px;
 
 
@@ -110,15 +115,15 @@ p{
 }
 
 .restaurant-name .fa-solid:hover {
-        opacity: 1;
-    }
+    opacity: 1;
+}
 
 
 
 .type-met h2 {
     font-family: 'Roboto';
     font-weight: 300;
-    font-size:16px;
+    font-size: 16px;
     position: relative;
     height: 27px;
     margin-top: 0;
@@ -147,130 +152,130 @@ p{
 
 
 .card {
+
     background-color: #ffffff;
     border-radius: 25px;
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
-    overflow:hidden;
-    
+    display: flex;
+    overflow: hidden;
+
+
 }
-.card:hover .hidden-item{
-    margin-right:-15px;
-    transition-duration:400ms;
-    
-}
-.hidden-item{
-   
-    
-    width:59px;
-    margin-top:-12px;
-    margin-bottom: -12px;
-    margin-right:-15px;
-    background-color:#99e2d0;
-    overflow:hidden;
-    margin-right: -80px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    
-     
-}
+
+
+
+
+
+
 /******************rotation icone**********************/
-.hidden-item img{
-    color:aliceblue;
-    display:block;   
+.hidden-item img {
+    color: aliceblue;
+
+
 }
-.card:hover .hidden-item img{
-    animation-name:rotate;
-    animation-duration:600ms;
+
+.card:hover .hidden-item img {
+    animation-name: rotate;
+    animation-duration: 600ms;
 }
-@keyframes rotate{
-    0%{
-        transform:rotate(180deg);
+
+@keyframes rotate {
+    0% {
+        transform: rotate(180deg);
     }
-    100%{
-        transform:rotate(0deg);
+
+    100% {
+        transform: rotate(0deg);
     }
 }
- 
+
 /*********************************déroulement check vers la droite********************/
 
 
-#entrees{
-    animation-name:affichage;
-    animation-duration:2s;
-   
+#entrees {
+    animation-name: affichage;
+    animation-duration: 2s;
+
 }
-@keyframes affichage{
-    0%{
-        transform:scale(0);
+
+@keyframes affichage {
+    0% {
+        transform: scale(0);
     }
-  
-    100%{
-        transform:scale(1);
+
+    100% {
+        transform: scale(1);
     }
 }
-#plats{
-    animation-name:affichage;
-    animation:affichage 2s ease-in-out both;
+
+#plats {
+    animation-name: affichage;
+    animation: affichage 2s ease-in-out both;
     animation-delay: 1s;
 }
-#desserts{
-    animation-name:affichage;
-    animation:affichage 2s ease-in-out both;
+
+#desserts {
+    animation-name: affichage;
+    animation: affichage 2s ease-in-out both;
     animation-delay: 2s;
 
 }
+
 /*******************************************/
 .description {
-
-    margin: 12px 15px;
-    display: flex;
-   
-
-
+    overflow: hidden;
+    margin:12px 15px 12px 15px;
 }
 
 .description-title {
-
-    width: 100%;
-  
-
-   
-
-}
-.description-title h3{
-    width:100%;
+    overflow: hidden;
     white-space: nowrap;
-    font-size:18px;
-    font-weight: bold;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
-    margin-bottom:5px;
+}
+
+.description-title h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    margin-bottom: 5px;
 }
 
 .description-title h4 {
-   
+    overflow: hidden;
+    white-space: nowrap;
     font-size: 15.04px;
     font-weight: 300;
-    width:100%;
-    white-space: nowrap;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    text-overflow: ellipsis;
-    margin-left:auto;
 }
-
-
 
 .price {
-   
-    font-weight: bold;
-    display:flex;
-    align-items: flex-end;
+
+    margin-top: 40px;
+    margin-left: auto;
     padding-right:15px;
+    font-weight: bold;
+    flex-shrink: 0;
+
 }
 
+.card:hover .hidden-item {
+
+    margin-right: 0px;
+    transition-duration: 400ms;
+
+}
+
+.hidden-item {
+    margin-right: -59px;
+    flex-shrink: 0;
+    width: 59px;
+    overflow: hidden;
+    margin-top: -12px;
+    margin-bottom: -12px;
+    background-color: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 
 
 
@@ -352,52 +357,59 @@ p{
     font-size: 16px;
     font-weight: 500;
 }
+
 /*****************************************************/
 /****************************************************/
 
-@media (min-width:768px){
-/****************header*****************/
-.header {
-    height: 96.34px;
-}
+@media (min-width:768px) {
 
-.logo {
-    height: 34.2px;
-    width: 200px;
-}
-/*************************container**********************************/
-.main-container {
-    margin-right:192px;
-    margin-left:193px;
-}
-.restaurant-name{
-    display:flex;
-    justify-content: center;
-}
-.restaurant-name h1 {
+    /****************header*****************/
+    .header {
+        height: 96.34px;
+    }
 
-    padding-right:24px;
-}
-/*********************************************************/
-/***********Footer****************/
-.footer {
-    background-color: #353535;
-    height: 114px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: flex-end;
+    .logo {
+        height: 34.2px;
 
-    padding: 22px 25px;
-    gap: 16px;
-    color: #ffffff;
+    }
 
-}
+    /*************************container**********************************/
+    .main-container {
+        margin-right: 192px;
+        margin-left: 193px;
+    }
 
-.links {
-    display: flex;
-    flex-direction: row;
-}
-/***************************************************/
-/**************************************************/
+    .restaurant-name {
+        display: flex;
+        justify-content: center;
+    }
+
+    .restaurant-name h1 {
+
+        padding-right: 24px;
+    }
+
+    /*********************************************************/
+    /***********Footer****************/
+    .footer {
+        background-color: #353535;
+        height: 114px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        padding: 22px 25px;
+        gap: 16px;
+        color: #ffffff;
+
+    }
+
+    .links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /***************************************************/
+    /**************************************************/
 }
