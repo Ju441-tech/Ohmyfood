@@ -230,11 +230,13 @@ p {
 .description-title {
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .description-title h3 {
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 18px;
     margin-bottom: 5px;
 }
@@ -242,6 +244,7 @@ p {
 .description-title h4 {
     overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
     font-size: 15.04px;
     font-weight: 300;
 }
